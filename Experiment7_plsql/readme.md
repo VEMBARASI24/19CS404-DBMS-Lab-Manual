@@ -191,6 +191,7 @@ END;
 ```
 ## Output:
 <img width="601" height="297" alt="image" src="https://github.com/user-attachments/assets/fb7abd95-7a70-4f8a-8d1c-bc0bfa26728b" />
+
 ## Result:
 Thus, the PL/SQL programs using variables, conditionals, and loops were executed successfully.
 
