@@ -194,5 +194,3 @@ END;
 ## Result:
 Thus, the PL/SQL programs using variables, conditionals, and loops were executed successfully.
 
-## RESULT
-Thus, the PL/SQL programs using variables, conditionals, and loops were executed successfully.
