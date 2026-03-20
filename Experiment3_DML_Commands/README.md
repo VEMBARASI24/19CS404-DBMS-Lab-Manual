@@ -46,8 +46,9 @@ Used to retrieve records from a table.
 SELECT column1, column2 FROM table_name WHERE condition;
 ```
 **Question 1**
---
+
 <img width="820" height="408" alt="image" src="https://github.com/user-attachments/assets/d3c43a39-2144-493e-90db-2274bf605b16" />
+
 ```
 UPDATE suppliers
 SET supplier_name = UPPER(supplier_name)
@@ -60,8 +61,9 @@ WHERE contact_person LIKE '% Singh';
 
 
 **Question 2**
----
+
 <img width="1235" height="455" alt="image" src="https://github.com/user-attachments/assets/4db4e82e-cf7c-48e5-8317-da09b69e2066" />
+
 ```
 DELETE FROM Customer
 WHERE 
@@ -76,8 +78,9 @@ WHERE
 
 
 **Question 3**
----
+
 <img width="747" height="365" alt="image" src="https://github.com/user-attachments/assets/7f4c3857-3ddd-4bce-bf70-225561d5fdb5" />
+
 ```
 SELECT CategoryName, Description
 FROM Categories
@@ -90,7 +93,7 @@ ORDER BY CategoryName;
 
 
 **Question 4**
----
+
 <img width="1225" height="427" alt="image" src="https://github.com/user-attachments/assets/bb7a7c01-7f83-40b5-ae00-6ff9a2acaeb0" />
 
 ```
@@ -106,8 +109,9 @@ WHERE city = 'New York'
 
 
 **Question 5**
----
+
 <img width="920" height="454" alt="image" src="https://github.com/user-attachments/assets/ea746b3e-27ee-461c-ad0c-4688d2ef9b05" />
+
 ```
 SELECT EmpID, EmpFname, EmpLname, Department, Project, Address, DOB, Gender
 FROM EmployeeInfo
@@ -120,7 +124,7 @@ LIMIT 5;
 
 
 **Question 6**
----
+
 <img width="820" height="484" alt="image" src="https://github.com/user-attachments/assets/c84b4254-5377-4b3a-a657-336d7a19363c" />
 
 ```
@@ -137,8 +141,10 @@ WHERE (julianday(discharge_date) - julianday(admission_date) + 1) > 3;
 
 
 **Question 7**
----
+
+
 <img width="1153" height="444" alt="image" src="https://github.com/user-attachments/assets/a762faeb-eb3f-451f-a0fa-801401e497f0" />
+
 ```
 SELECT 
     product_id,
@@ -152,8 +158,9 @@ FROM Products;
 <img width="1198" height="301" alt="image" src="https://github.com/user-attachments/assets/116e24d2-048f-462b-a464-62b4f7f7981a" />
 
 **Question 8**
----
+
 <img width="921" height="485" alt="image" src="https://github.com/user-attachments/assets/c7d3e030-ee9b-4c33-9b4b-527044abacea" />
+
 ```
 SELECT ename
 FROM emp
@@ -166,8 +173,9 @@ WHERE LOWER(SUBSTR(ename, 1, 2)) = LOWER(SUBSTR(ename, -2));
 
 
 **Question 9**
----
+
 <img width="908" height="196" alt="image" src="https://github.com/user-attachments/assets/4688e3ce-3e11-4694-b940-9a1d9a2a2e40" />
+
 ```
 UPDATE products
 SET product_name = 'Grapefruit'
@@ -178,7 +186,7 @@ WHERE product_id = 4;
 
 
 **Question 10**
----
+
 <img width="880" height="479" alt="image" src="https://github.com/user-attachments/assets/bad1072d-fabb-4ebd-8a92-5238bf701e38" />
 
 ```
