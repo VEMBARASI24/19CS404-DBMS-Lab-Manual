@@ -23,32 +23,30 @@ FlexiFit Gym wants a database to manage its members, trainers, and fitness progr
 
 ### ER Diagram:
 *Paste or attach your diagram here*  
-![ER Diagram](er_diagram_fitness.png)
+<img width="938" height="633" alt="image" src="https://github.com/user-attachments/assets/cb3df6ea-5567-49f0-a75c-35855406b2c4" />
+
 
 ### Entities and Attributes
 
-| Entity | Attributes (PK, FK) | Notes |
-|--------|--------------------|-------|
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
+<img width="399" height="259" alt="image" src="https://github.com/user-attachments/assets/2b9726a3-289d-471b-b033-a1475018b29c" />
+
 
 ### Relationships and Constraints
 
-| Relationship | Cardinality | Participation | Notes |
-|--------------|------------|---------------|-------|
-|              |            |               |       |
-|              |            |               |       |
-|              |            |               |       |
+<img width="571" height="278" alt="image" src="https://github.com/user-attachments/assets/aa725d6a-3789-40b2-a9b8-a22fd7137781" />
+
 
 ### Assumptions
-- 
-- 
-- 
 
----
+Each entity (Member, Program, Trainer) has a unique identifier, even if not explicitly shown.
+
+A member can register for multiple programs and make multiple payments.
+
+A trainer can handle multiple programs and sessions, but each session has only one trainer.
+
+Attendance is recorded for each member in each session with status (Present/Absent).
+
+Many-to-many relationships (Member–Program, Program–Trainer) are handled using junction tables.
 
 # Scenario B: City Library Event & Book Lending System
 
@@ -65,32 +63,30 @@ The Central Library wants to manage book lending and cultural events.
 
 ### ER Diagram:
 *Paste or attach your diagram here*  
-![ER Diagram](er_diagram_library.png)
+<img width="900" height="931" alt="image" src="https://github.com/user-attachments/assets/a0c9383b-c09c-499d-8c38-9d6de6efd5db" />
+
 
 ### Entities and Attributes
 
-| Entity | Attributes (PK, FK) | Notes |
-|--------|--------------------|-------|
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
+<img width="468" height="236" alt="image" src="https://github.com/user-attachments/assets/2b760d47-bf0a-4a6d-8a81-ab94ec098fa2" />
 
 ### Relationships and Constraints
 
-| Relationship | Cardinality | Participation | Notes |
-|--------------|------------|---------------|-------|
-|              |            |               |       |
-|              |            |               |       |
-|              |            |               |       |
+<img width="490" height="203" alt="image" src="https://github.com/user-attachments/assets/9f94583c-1523-4b8a-95df-c19b96305b7b" />
+
 
 ### Assumptions
-- 
-- 
-- 
 
----
+Each main entity (Members, Event, Speaker) has a unique ID, and Room Name is treated as unique.
+
+A member can borrow multiple books, and a book can be borrowed by multiple members over time.
+
+A member can register for multiple events, and each event can have many members.
+
+An event can have multiple speakers, and a speaker can participate in multiple events.
+
+Each event is assigned to one room, but a room can host multiple events at different times.
+
 
 # Scenario C: Restaurant Table Reservation & Ordering
 
@@ -107,32 +103,31 @@ A popular restaurant wants to manage reservations, orders, and billing.
 
 ### ER Diagram:
 *Paste or attach your diagram here*  
-![ER Diagram](er_diagram_restaurant.png)
+<img width="1023" height="685" alt="image" src="https://github.com/user-attachments/assets/e73a476d-396c-40e0-81ef-3122ca26f70a" />
+
 
 ### Entities and Attributes
 
-| Entity | Attributes (PK, FK) | Notes |
-|--------|--------------------|-------|
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
+<img width="1021" height="314" alt="image" src="https://github.com/user-attachments/assets/95af1029-7b2f-4998-90ad-bb9bbd026cbc" />
+
 
 ### Relationships and Constraints
 
-| Relationship | Cardinality | Participation | Notes |
-|--------------|------------|---------------|-------|
-|              |            |               |       |
-|              |            |               |       |
-|              |            |               |       |
+<img width="517" height="316" alt="image" src="https://github.com/user-attachments/assets/c4290f23-7e51-44a5-9500-93ae313690f4" />
+
 
 ### Assumptions
-- 
-- 
-- 
 
----
+Each entity has a unique primary key, and all foreign keys correctly reference related entities.
+
+A customer can make multiple reservations, but each reservation is linked to one customer and one waiter.
+
+A reservation can have multiple orders, and each order can include multiple dishes (handled using a junction table).
+
+Each dish belongs to one category, and a category can contain many dishes.
+
+Each reservation generates one bill, calculated based on its orders, maintaining a 1:1 relationship.
+
 
 ## Instructions for Students
 
